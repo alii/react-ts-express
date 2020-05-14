@@ -16,6 +16,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: black;
+  color: white;
 }
 
 .container {
@@ -23,11 +25,26 @@ body {
 }
 
 code {
-  background: black;
+  background: #272727;
   border-radius: 5px;
   color: white;
   display: inline-block;
   padding: 3px 5px;
+}
+
+a {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 20px;
+  background: black;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #383838;
+
+  &:hover {
+    background: rgba(white, 0.1);
+  }
 }
 
 * {

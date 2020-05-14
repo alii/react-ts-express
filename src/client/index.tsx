@@ -15,6 +15,7 @@ const App = () => {
         To get started, edit something in <code>src/client/index.tsx</code>
         <br /> and watch it update live here!
       </p>
+      <a href={'https://github.com/aabbccsmith/react-ts-express'}>⭐ Star on GitHub</a>
     </div>
   );
 };
