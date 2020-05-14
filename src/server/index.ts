@@ -3,8 +3,8 @@ import express from 'express';
 import { join } from 'path';
 import { existsSync } from 'fs';
 
-const builtFile = join(__dirname, '..', 'dist', 'index.html');
-const hasFile = existsSync(builtFile);
+const builtFilePath = join(__dirname, '..', 'dist', 'index.html');
+const hasBuilt = existsSync(builtFilePath);
 
 const app = express();
 app.use(express.static('dist'));
@@ -14,8 +14,8 @@ app.get('/backend-route', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-  if (hasFile) {
-    res.sendFile(builtFile);
+  if (hasBuilt) {
+    res.sendFile(builtFilePath);
     return;
   }
 
