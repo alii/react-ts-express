@@ -44,10 +44,10 @@ module.exports = {
     stats: {
       colors: true,
       chunks: false,
-      hash: false,
-      version: false,
-      timings: false,
-      assets: false,
+      hash: true,
+      version: true,
+      timings: true,
+      assets: true,
       children: false,
       source: false,
       warnings: true,
@@ -62,5 +62,6 @@ module.exports = {
   },
   resolve: {
     modules: ['src/client', 'node_modules'],
+    extensions: ['.ts', '.tsx', '.js'],
   },
 };
