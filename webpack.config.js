@@ -35,11 +35,12 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,
-    port: 2000,
+    port: 3000,
     hot: true,
+    open: true,
     historyApiFallback: true,
     proxy: {
-      '/': 'http://localhost:3000',
+      '/': 'http://localhost:2000',
     },
     stats: {
       colors: true,

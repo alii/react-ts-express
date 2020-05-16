@@ -23,4 +23,4 @@ app.get('*', (req, res) => {
   res.status(404).send(`Cannot GET ${req.path}`);
 });
 
-app.listen(process.env.PORT || 3000, () => console.log('[BACKEND] Server started'));
+app.listen(process.env.PORT || 2000, () => console.log('[BACKEND] Server started'));
